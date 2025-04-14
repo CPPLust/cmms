@@ -21,4 +21,4 @@ fi
 
 
 cd -
-mv out/xrtcserver .
+mv out/cmms .
