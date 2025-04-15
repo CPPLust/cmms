@@ -44,7 +44,7 @@ int gettimeofday(struct timeval* tv, void* tz)
 	tv->tv_sec = static_cast<long>(clock);
 	tv->tv_usec = sys_time.wMilliseconds * 1000L; // 转换为微秒
 
-
+#if 0
 	// 输出结果
 	std::cout << "Local time (SYSTEMTIME):\n";
 	std::cout << sys_time.wYear << "-" << sys_time.wMonth << "-" << sys_time.wDay
@@ -55,6 +55,7 @@ int gettimeofday(struct timeval* tv, void* tz)
 	std::cout << "\nVerification (localtime):\n";
 	std::cout << local_tm.tm_year + 1900 << "-" << local_tm.tm_mon + 1 << "-" << local_tm.tm_mday
 		<< " " << local_tm.tm_hour << ":" << local_tm.tm_min << ":" << local_tm.tm_sec << "\n";
+#endif
 
 	return 0;
 }
@@ -80,11 +81,26 @@ int64_t TTime::Now()
 }
 int64_t TTime::Now(int& year, int& month, int& day, int& hour, int& minute, int& second)
 {
+	struct tm      tm;
+	time_t t = time(NULL);
+#if defined(_WIN32)
+	localtime_s(&tm,&t);
+#else
+	localtime_r(&t, &tm);
+#endif
+
+	year = tm.tm_year + 1900;
+	month = tm.tm_mon + 1;
+	day = tm.tm_mday;
+	hour = tm.tm_hour;
+	minute = tm.tm_min;
+	second = tm.tm_sec;
+
 	return 0;
 }
 std::string TTime::ISOTime()
 {
-	return 0;
+	return "";
 }
 
 

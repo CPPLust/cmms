@@ -19,11 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="base\StringUtils.cpp" />
     <ClCompile Include="base\TTime.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="network\win\wepoll.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="base\StringUtils.h" />
     <ClInclude Include="base\TTime.h" />
+    <ClInclude Include="network\win\wepoll.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -16,6 +16,12 @@
     <Filter Include="源文件\base">
       <UniqueIdentifier>{ade7c54a-76db-41f7-9442-19cf0b474881}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\network">
+      <UniqueIdentifier>{e10ed677-0a2e-4d7b-a125-303a2d1ec99b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\network\win">
+      <UniqueIdentifier>{8b468ff8-56f8-46c7-80d0-ae8a7794ea8a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base\TTime.cpp">
@@ -24,10 +30,22 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="base\StringUtils.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="network\win\wepoll.c">
+      <Filter>源文件\network\win</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\TTime.h">
       <Filter>源文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\StringUtils.h">
+      <Filter>源文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="network\win\wepoll.h">
+      <Filter>源文件\network\win</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

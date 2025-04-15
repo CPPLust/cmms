@@ -4,8 +4,7 @@
 int main(int argc, char* argv[])
 {
 
-
-	std::cout <<"NowMS  :" << cmms::TTime::NowMS();
+	std::cout <<"NowMS  :" << cmms::TTime::NowMS() << std::endl;
 
 	getchar();
 
