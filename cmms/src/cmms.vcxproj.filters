@@ -19,8 +19,14 @@
     <Filter Include="源文件\network">
       <UniqueIdentifier>{e10ed677-0a2e-4d7b-a125-303a2d1ec99b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\network\win">
-      <UniqueIdentifier>{8b468ff8-56f8-46c7-80d0-ae8a7794ea8a}</UniqueIdentifier>
+    <Filter Include="源文件\network\net">
+      <UniqueIdentifier>{639ba133-a1ab-47cb-9298-61aba533e121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\network\net\win">
+      <UniqueIdentifier>{8b484b29-bc0e-4f2b-8d31-126ec0b3fae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\network\test">
+      <UniqueIdentifier>{2a2e70ce-4624-410b-9d65-d19a0577dbc5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,8 +39,44 @@
     <ClCompile Include="base\StringUtils.cpp">
       <Filter>源文件\base</Filter>
     </ClCompile>
-    <ClCompile Include="network\win\wepoll.c">
-      <Filter>源文件\network\win</Filter>
+    <ClCompile Include="network\net\EventLoop.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\win\wepoll.c">
+      <Filter>源文件\network\net\win</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\Event.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\socket.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\EventLoopThread.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="base\NonCopyable.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\EventLoopThreadTest.cpp">
+      <Filter>源文件\network\test</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\PipeWinEvent.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\PipeLinuxEvent.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\EventLoopThreadPool.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\TimingWheel.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net\InetAddress.cpp">
+      <Filter>源文件\network\net</Filter>
+    </ClCompile>
+    <ClCompile Include="network\test\InetAddressTest.cpp">
+      <Filter>源文件\network\test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,8 +86,38 @@
     <ClInclude Include="base\StringUtils.h">
       <Filter>源文件\base</Filter>
     </ClInclude>
-    <ClInclude Include="network\win\wepoll.h">
-      <Filter>源文件\network\win</Filter>
+    <ClInclude Include="network\net\EventLoop.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\win\wepoll.h">
+      <Filter>源文件\network\net\win</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\Event.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\socket.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\EventLoopThread.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="base\NonCopyable.h">
+      <Filter>源文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\PipeWinEvent.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\PipeLinuxEvent.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\EventLoopThreadPool.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\TimingWheel.h">
+      <Filter>源文件\network\net</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net\InetAddress.h">
+      <Filter>源文件\network\net</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -19,15 +19,37 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="base\NonCopyable.cpp" />
     <ClCompile Include="base\StringUtils.cpp" />
     <ClCompile Include="base\TTime.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="network\win\wepoll.c" />
+    <ClCompile Include="network\net\Event.cpp" />
+    <ClCompile Include="network\net\EventLoop.cpp" />
+    <ClCompile Include="network\net\EventLoopThread.cpp" />
+    <ClCompile Include="network\net\EventLoopThreadPool.cpp" />
+    <ClCompile Include="network\net\InetAddress.cpp" />
+    <ClCompile Include="network\net\PipeLinuxEvent.cpp" />
+    <ClCompile Include="network\net\PipeWinEvent.cpp" />
+    <ClCompile Include="network\net\socket.cpp" />
+    <ClCompile Include="network\net\TimingWheel.cpp" />
+    <ClCompile Include="network\net\win\wepoll.c" />
+    <ClCompile Include="network\test\EventLoopThreadTest.cpp" />
+    <ClCompile Include="network\test\InetAddressTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="base\NonCopyable.h" />
     <ClInclude Include="base\StringUtils.h" />
     <ClInclude Include="base\TTime.h" />
-    <ClInclude Include="network\win\wepoll.h" />
+    <ClInclude Include="network\net\Event.h" />
+    <ClInclude Include="network\net\EventLoop.h" />
+    <ClInclude Include="network\net\EventLoopThread.h" />
+    <ClInclude Include="network\net\EventLoopThreadPool.h" />
+    <ClInclude Include="network\net\InetAddress.h" />
+    <ClInclude Include="network\net\PipeLinuxEvent.h" />
+    <ClInclude Include="network\net\PipeWinEvent.h" />
+    <ClInclude Include="network\net\socket.h" />
+    <ClInclude Include="network\net\TimingWheel.h" />
+    <ClInclude Include="network\net\win\wepoll.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -120,6 +142,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

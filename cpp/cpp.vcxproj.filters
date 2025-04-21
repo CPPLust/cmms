@@ -14,4 +14,41 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Human.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Men.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WoMen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="str_remove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="中位数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="share.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="once_flag.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Human.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Men.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WoMen.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
